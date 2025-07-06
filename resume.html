@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <title>👨‍💻 RAGHAVVRAM JOHNSON</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in {
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+        .stagger-in > * {
+            animation: fadeIn 0.5s ease-out forwards;
+            animation-delay: var(--stagger-delay);
+        }
+        body {
+            font-family: 'JetBrains Mono', monospace;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-300 font-sans leading-relaxed">
+
+    <div class="max-w-full mx-auto px-8 sm:px-12 md:px-24 py-12 space-y-20">
+
+        <header class="flex flex-col items-center text-center fade-in">
+            <h1 class="text-5xl font-bold text-white tracking-wider">👨‍💻 RAGHAVVRAM JOHNSON</h1>
+            <div class="flex justify-center items-center space-x-6 mt-8 text-lg flex-wrap">
+                <a href="tel:+918778754856" class="hover:text-blue-300 transition-colors duration-300 my-2"><i class="fas fa-phone-alt mr-2"></i>(+91) 8778754856</a>
+                <a href="mailto:raghavvram@gmail.com" class="hover:text-blue-300 transition-colors duration-300 my-2"><i class="fas fa-envelope mr-2"></i>raghavvram@gmail.com</a>
+                <a href="https://github.com/Raghavvram" target="_blank" class="hover:text-blue-300 transition-colors duration-300 my-2"><i class="fab fa-github mr-2"></i>GitHub</a>
+                <a href="https://www.linkedin.com/in/raghavvram" target="_blank" class="hover:text-blue-300 transition-colors duration-300 my-2"><i class="fab fa-linkedin mr-2"></i>LinkedIn</a>
+                <a href="https://medium.com/@raghavvram" target="_blank" class="hover:text-blue-300 transition-colors duration-300 my-2"><i class="fab fa-medium mr-2"></i>Medium</a>
+            </div>
+        </header>
+            
+        <main class="grid grid-cols-1 md:grid-cols-3 gap-x-16 gap-y-16 p-4">
+            <!-- Left Column -->
+            <div class="md:col-span-2 space-y-16">
+                <section class="fade-in" style="--stagger-delay: 100ms;">
+                    <h3 class="text-3xl font-bold text-blue-400 border-b-2 border-blue-500 pb-3 mb-8 flex items-center"><i class="fas fa-user-circle mr-4"></i>Summary</h3>
+                    <p class="text-xl">A highly motivated Computer Science student who finds genuine joy in the world of <strong>Linux and automation</strong>—it's my guilty pleasure. My passion lies in the creative process of building, breaking, and rebuilding software to create robust, real-world products. I have a natural affinity for architecting elegant solutions, from designing to deploying applications. I am eager to contribute to a collaborative team, tackling complex challenges and delivering reliable, mission-critical applications.</p>
+                </section>
+
+                <section class="fade-in" style="--stagger-delay: 200ms;">
+                    <h3 class="text-3xl font-bold text-blue-400 border-b-2 border-blue-500 pb-3 mb-8 flex items-center"><i class="fas fa-briefcase mr-4"></i>Experience</h3>
+                    <div class="space-y-8">
+                        <div class="transform hover:scale-105 transition-transform duration-300 bg-gray-800 p-8 rounded-lg shadow-lg">
+                            <h4 class="text-2xl font-semibold text-white">🔒 Digital Fortress - Hardware Security Module (HSM)</h4>
+                            <p class="text-md text-gray-400 italic mt-1"><strong>Role:</strong> Embedded Systems Developer</p>
+                            <p class="text-sm text-gray-500 mb-4"><strong>Tech Stack:</strong> Rust, Python, C</p>
+                            <ul class="list-disc list-inside text-lg space-y-2">
+                                <li>Modified and added custom modules using the <code>libtock-rs</code> library (Google's OpenSK) to make captive fingerprint sensors compatible with the <code>nRF52840_dongle</code>, an HSM used for authentication.</li>
+                            </ul>
+                        </div>
+                        <div class="transform hover:scale-105 transition-transform duration-300 bg-gray-800 p-8 rounded-lg shadow-lg">
+                            <h4 class="text-2xl font-semibold text-white">🧑‍🏫 Edubot - Student Submission Dashboard</h4>
+                            <p class="text-md text-gray-400 italic mt-1"><strong>Role:</strong> Frontend Developer Intern</p>
+                            <p class="text-sm text-gray-500 mb-4"><strong>Tech Stack:</strong> Node.js, React.js, Tailwind CSS, TanStack Routing, UI libraries</p>
+                            <ul class="list-disc list-inside text-lg space-y-2">
+                                <li>Designed and implemented mobile-responsive submission management screens with integrated grading dashboard, PDF viewer (zoom, full-screen, download), and real-time feedback tracking.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="fade-in" style="--stagger-delay: 300ms;">
+                    <h3 class="text-3xl font-bold text-blue-400 border-b-2 border-blue-500 pb-3 mb-8 flex items-center"><i class="fas fa-rocket mr-4"></i>Projects</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 stagger-in">
+                        <div class="bg-gray-800 p-8 rounded-lg shadow-lg hover:shadow-blue-500/50 transition-shadow duration-300" style="--stagger-delay: 350ms;">
+                            <h4 class="text-xl font-bold text-white">🌦️ Multivariate Climate Time Series Forecasting</h4>
+                            <p class="text-sm text-gray-500 my-3"><strong>Tech Stack:</strong> Python, TensorFlow, Flask, Pandas, Scikit-learn</p>
+                            <ul class="list-disc list-inside text-base space-y-2">
+                                <li>Developed and deployed a scalable ML pipeline for climate forecasting, utilizing LSTM, RNN, and GRU models.</li>
+                                <li>Automated data ingestion and preprocessing for large-scale multivariate time-series datasets.</li>
+                                <li>Containerized a Flask web app for real-time trend predictions.</li>
+                            </ul>
+                            <a href="https://github.com/Raghavvram/Unveiling-Climate-Change-Dynamics-through-Earth-Surface-Temperature-Analysis-" class="text-blue-400 hover:underline mt-4 inline-block">View on GitHub <i class="fas fa-external-link-alt ml-1"></i></a>
+                        </div>
+                        <div class="bg-gray-800 p-8 rounded-lg shadow-lg hover:shadow-blue-500/50 transition-shadow duration-300" style="--stagger-delay: 400ms;">
+                            <h4 class="text-xl font-bold text-white">💡 Li-Fi – Light Fidelity Communication</h4>
+                            <p class="text-sm text-gray-500 my-3"><strong>Tech Stack:</strong> Arduino, Android Studio, Java, Kotlin, C</p>
+                            <ul class="list-disc list-inside text-base space-y-2">
+                                <li>Designed a real-time, point-to-point communication system using visible light (Li-Fi).</li>
+                                <li>Transmitted ASCII data from Android to Arduino using a custom error-correction protocol.</li>
+                            </ul>
+                            <a href="https://github.com/Raghavvram/TTF2.0" class="text-blue-400 hover:underline mt-4 inline-block">GitHub 1 <i class="fas fa-external-link-alt ml-1"></i></a><br>
+                            <a href="https://github.com/Raghavvram/LiFi-project" class="text-blue-400 hover:underline mt-2 inline-block">GitHub 2 <i class="fas fa-external-link-alt ml-1"></i></a>
+                        </div>
+                        <div class="bg-gray-800 p-8 rounded-lg shadow-lg hover:shadow-blue-500/50 transition-shadow duration-300" style="--stagger-delay: 450ms;">
+                            <h4 class="text-xl font-bold text-white">💸 Offline Payment System – Bluetooth Peer-to-Peer Payments</h4>
+                            <p class="text-sm text-gray-500 my-3"><strong>Tech Stack:</strong> React Native, Node.js, PostgreSQL, Kotlin, Android APIs</p>
+                            <ul class="list-disc list-inside text-base space-y-2">
+                                <li>Built a secure offline-first payment system using Bluetooth for P2P transactions.</li>
+                                <li>Designed a device-level distributed ledger with reconciliation logic.</li>
+                                <li>Focused on ensuring data integrity in disconnected networks.</li>
+                            </ul>
+                        </div>
+                        <div class="bg-gray-800 p-8 rounded-lg shadow-lg hover:shadow-blue-500/50 transition-shadow duration-300" style="--stagger-delay: 500ms;">
+                            <h4 class="text-xl font-bold text-white">🧠 Resonar – AI Research Assistant</h4>
+                            <p class="text-sm text-gray-500 my-3"><strong>Tech Stack:</strong> Node.js, Python, React.js, PostgreSQL, Neo4J</p>
+                            <ul class="list-disc list-inside text-base space-y-2">
+                                <li>Developed a scalable backend for an AI research assistant using PathRAG.</li>
+                                <li>Optimized Neo4J traversal and API response times for complex academic queries.</li>
+                            </ul>
+                            <a href="https://github.com/Raghavvram/Research-Reasoner" class="text-blue-400 hover:underline mt-4 inline-block">View on GitHub <i class="fas fa-external-link-alt ml-1"></i></a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="fade-in" style="--stagger-delay: 550ms;">
+                    <h3 class="text-3xl font-bold text-blue-400 border-b-2 border-blue-500 pb-3 mb-8 flex items-center"><i class="fas fa-graduation-cap mr-4"></i>Education</h3>
+                    <div class="bg-gray-800 p-8 rounded-lg shadow-lg">
+                        <h4 class="text-xl font-semibold text-white">Vellore Institute of Technology, Amaravathi (2022–Present)</h4>
+                        <p class="mt-1">📚 B.Tech Computer Science Engineering (CGPA: 8.92)</p>
+                        <hr class="my-6 border-gray-700">
+                        <h4 class="text-xl font-semibold text-white">SBOA School and Junior College, Chennai, India</h4>
+                        <p class="mt-2">📘 <strong>Intermediate / 12th Grade</strong> (Graduated: May 2022 | Percentage: 80%)</p>
+                        <p class="text-sm text-gray-400">Coursework: Mathematics, Physics, Chemistry, Computer Science</p>
+                        <p class="mt-3">📗 <strong>10th Grade</strong> (Graduated: June 2020 | Percentage: 92%)</p>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Right Column -->
+            <div class="md:col-span-1 space-y-16">
+                <section class="fade-in" style="--stagger-delay: 600ms;">
+                    <h3 class="text-3xl font-bold text-blue-400 border-b-2 border-blue-500 pb-3 mb-8 flex items-center"><i class="fas fa-cogs mr-4"></i>Technical Skills</h3>
+                    <div class="bg-gray-800 p-8 rounded-lg shadow-lg">
+                        <div class="flex flex-wrap gap-4 justify-center text-sm">
+                            <span class="bg-sky-800 text-sky-200 px-4 py-2 rounded-full shadow-md transform hover:scale-110 transition-transform duration-200 cursor-pointer">Java</span>
+                            <span class="bg-sky-800 text-sky-200 px-4 py-2 rounded-full shadow-md transform hover:scale-110 transition-transform duration-200 cursor-pointer">Python</span>
+                            <span class="bg-sky-800 text-sky-200 px-4 py-2 rounded-full shadow-md transform hover:scale-110 transition-transform duration-200 cursor-pointer">JavaScript/TypeScript</span>
+                            <span class="bg-sky-800 text-sky-200 px-4 py-2 rounded-full shadow-md transform hover:scale-110 transition-transform duration-200 cursor-pointer">Rust</span>
+                            <span class="bg-sky-800 text-sky-200 px-4 py-2 rounded-full shadow-md transform hover:scale-110 transition-transform duration-200 cursor-pointer">C/C++</span>
+                            <span class="bg-sky-800 text-sky-200 px-4 py-2 rounded-full shadow-md transform hover:scale-110 transition-transform duration-200 cursor-pointer">SQL</span>
+                            <span class="bg-teal-800 text-teal-200 px-4 py-2 rounded-full shadow-md transform hover:scale-110 transition-transform duration-200 cursor-pointer">React.js</span>
+                            <span class="bg-teal-800 text-teal-200 px-4 py-2 rounded-full shadow-md transform hover:scale-110 transition-transform duration-200 cursor-pointer">Node.js</span>
+                            <span class="bg-teal-800 text-teal-200 px-4 py-2 rounded-full shadow-md transform hover:scale-110 transition-transform duration-200 cursor-pointer">Next.js</span>
+                            <span class="bg-teal-800 text-teal-200 px-4 py-2 rounded-full shadow-md transform hover:scale-110 transition-transform duration-200 cursor-pointer">Flask</span>
+                            <span class="bg-teal-800 text-teal-200 px-4 py-2 rounded-full shadow-md transform hover:scale-110 transition-transform duration-200 cursor-pointer">FastAPI</span>
+                            <span class="bg-emerald-800 text-emerald-200 px-4 py-2 rounded-full shadow-md transform hover:scale-110 transition-transform duration-200 cursor-pointer">AWS</span>
+                            <span class="bg-emerald-800 text-emerald-200 px-4 py-2 rounded-full shadow-md transform hover:scale-110 transition-transform duration-200 cursor-pointer">Docker</span>
+                            <span class="bg-emerald-800 text-emerald-200 px-4 py-2 rounded-full shadow-md transform hover:scale-110 transition-transform duration-200 cursor-pointer">Kubernetes</span>
+                            <span class="bg-emerald-800 text-emerald-200 px-4 py-2 rounded-full shadow-md transform hover:scale-110 transition-transform duration-200 cursor-pointer">Git</span>
+                            <span class="bg-emerald-800 text-emerald-200 px-4 py-2 rounded-full shadow-md transform hover:scale-110 transition-transform duration-200 cursor-pointer">Ansible</span>
+                            <span class="bg-indigo-800 text-indigo-200 px-4 py-2 rounded-full shadow-md transform hover:scale-110 transition-transform duration-200 cursor-pointer">PostgreSQL</span>
+                            <span class="bg-indigo-800 text-indigo-200 px-4 py-2 rounded-full shadow-md transform hover:scale-110 transition-transform duration-200 cursor-pointer">MongoDB</span>
+                            <span class="bg-indigo-800 text-indigo-200 px-4 py-2 rounded-full shadow-md transform hover:scale-110 transition-transform duration-200 cursor-pointer">REST API</span>
+                            <span class="bg-purple-800 text-purple-200 px-4 py-2 rounded-full shadow-md transform hover:scale-110 transition-transform duration-200 cursor-pointer">Machine Learning</span>
+                            <span class="bg-purple-800 text-purple-200 px-4 py-2 rounded-full shadow-md transform hover:scale-110 transition-transform duration-200 cursor-pointer">Deep Learning</span>
+                            <span class="bg-purple-800 text-purple-200 px-4 py-2 rounded-full shadow-md transform hover:scale-110 transition-transform duration-200 cursor-pointer">Microservices</span>
+                            <span class="bg-purple-800 text-purple-200 px-4 py-2 rounded-full shadow-md transform hover:scale-110 transition-transform duration-200 cursor-pointer">Cybersecurity</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="fade-in" style="--stagger-delay: 650ms;">
+                    <h3 class="text-3xl font-bold text-blue-400 border-b-2 border-blue-500 pb-3 mb-8 flex items-center">Professional Skills<i class="fas fa-star mr-4"></i></h3>
+                    <div class="bg-gray-800 p-10 rounded-lg shadow-lg">
+                        <div class="grid grid-cols-1 gap-5 text-lg">
+                            <div class="flex items-center space-x-4">
+                                <i class="fas fa-code-branch text-green-400 text-xl"></i>
+                                <span>Critical Thinking</span>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <i class="fas fa-users-cog text-green-400 text-xl"></i>
+                                <span>Decision-Making</span>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <i class="fas fa-bug text-green-400 text-xl"></i>
+                                <span>Problem-Solving</span>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <i class="fas fa-shield-alt text-green-400 text-xl"></i>
+                                <span>Team Collaboration</span>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <i class="fas fa-cloud-upload-alt text-green-400 text-xl"></i>
+                                <span>Communication</span>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <i class="fas fa-infinity text-green-400 text-xl"></i>
+                                <span>Leadership</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="fade-in" style="--stagger-delay: 700ms;">
+                    <h3 class="text-3xl font-bold text-blue-400 border-b-2 border-blue-500 pb-3 mb-8 flex items-center"><i class="fas fa-award mr-4"></i>Achievements & Certifications</h3>
+                    <div class="bg-gray-800 p-8 rounded-lg shadow-lg space-y-6 text-sm">
+                        <div>
+                            <h4 class="text-lg font-semibold text-white">📘 NPTEL</h4>
+                            <ul class="list-disc list-inside ml-4 mt-2 space-y-1">
+                                <li><strong>Introduction to Internet of Things</strong> (Jul–Oct 2023)</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-semibold text-white">🤖 Artificial Intelligence & Machine Learning</h4>
+                            <ul class="list-disc list-inside ml-4 mt-2 space-y-1">
+                                <li><strong>Artificial Intelligence using Google TensorFlow</strong> - <em>Powered by Google Developers</em></li>
+                                <li><a href="https://drive.google.com/file/d/17brZ1Qvs-VYqR-rUsIfWZr9BKf2uiMyu/view?usp=sharing" class="text-blue-400 hover:underline">Certificate Link</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-semibold text-white">🧠 NVIDIA Deep Learning Institute (DLI)</h4>
+                            <ul class="list-disc list-inside ml-4 mt-2 space-y-1">
+                                <li><a href="https://learn.nvidia.com/certificates?id=x7gc1C9tR-mdSnrpQsyM1w" class="text-blue-400 hover:underline">Fundamentals of Deep Learning</a></li>
+                                <li><a href="https://learn.nvidia.com/certificates?id=04pQI7KJQuy8PduoXxd9zQ" class="text-blue-400 hover:underline">Applications of AI for Predictive Maintenance</a></li>
+                                <li><a href="https://learn.nvidia.com/certificates?id=Hv3OeWo2Sw2y4NWwegHrvQ" class="text-blue-400 hover:underline">Building Transformer-Based Natural Language Processing Applications</a></li>
+                                <li><a href="https://learn.nvidia.com/certificates?id=hSF92iLBRJ21b3wRf3bxOw" class="text-blue-400 hover:underline">Fundamentals of Accelerated Computing with CUDA C</a></li>
+                                <li><a href="https://learn.nvidia.com/certificates?id=KY9tYl8PSsqBjx2wUTHeKA" class="text-blue-400 hover:underline">Fundamentals of Accelerated Computing with CUDA Python</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-semibold text-white">☁️ Google Cloud Skill Boost</h4>
+                            <ul class="list-disc list-inside ml-4 mt-2 space-y-1">
+                                <li><a href="https://www.cloudskillsboost.google/public_profiles/770fd0fd-9fac-4687-9917-c464f8aaea18" class="text-blue-400 hover:underline">View Google Cloud Skill Boost Profile</a></li>
+                                <li>Introduction to Generative AI</li>
+                                <li>Gemini for Google Cloud</li>
+                                <li>Generative AI for Developers</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-semibold text-white">🌩️ Amazon Web Services (AWS)</h4>
+                            <ul class="list-disc list-inside ml-4 mt-2 space-y-1">
+                                <li><a href="https://www.credly.com/users/raghavvram-johnson/badges#credly" class="text-blue-400 hover:underline">AWS Digital Badges Profile</a></li>
+                                <li><a href="https://drive.google.com/file/d/1woxthl9mV4RJINqFvi90YeE4rhJ7H0Hi/view" class="text-blue-400 hover:underline">AWS Academy Cloud Foundations</a></li>
+                                <li><a href="https://drive.google.com/file/d/1v_3rMq4_0e1RljPPE1fz9w4ZdSNzxAiU/view" class="text-blue-400 hover:underline">AWS Academy Cloud Architecting</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
